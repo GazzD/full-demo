@@ -1,0 +1,24 @@
+<h1>Animal list</h1>
+<input type="text" [(ngModel)]="animalType">
+<input type="number" [(ngModel)]="animalAge">
+<button (click)="searchAnimals()">Search</button>
+
+
+<header>
+
+</header>
+
+<main>
+  <article>
+    <h1>Pets <3</h1>
+    <div *ngFor="let pet of animalList">
+      <p>{{ pet.name }}</p>
+      <p>{{ pet.age }}</p>
+      <p>{{ pet.type }}</p>
+    </div>
+  </article>
+</main>
+
+<footer>
+
+</footer>
